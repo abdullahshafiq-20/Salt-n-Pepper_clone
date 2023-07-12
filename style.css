@@ -1865,7 +1865,8 @@ h3 {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: auto;
+    border: 1px solid red;
 }
 
 .feed-outer-container h3 {
@@ -1887,8 +1888,9 @@ h3 {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
-    height: 75vh;
+    width: auto;
+    height: auto;
+    border: 1px solid red;
 }
 
 .feed-inner-container p {
@@ -1927,7 +1929,8 @@ h3 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
+    border: 1px solid red;
 }
 
 .star-box p {
@@ -1957,6 +1960,8 @@ h3 {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    border: 1px solid red;;
+
 }
 
 .form-blank {
@@ -1972,6 +1977,7 @@ h3 {
     background-color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 0.25rem;
+    border: 1px solid red;
 }
 
 .feed-inner-container-frnachise {
@@ -1981,6 +1987,7 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
+    border: 1px solid red;
 }
 
 .feed-inner-container-franchise p {
@@ -2012,4 +2019,35 @@ h3 {
     text-align: center;
     padding: 30px;
     margin-top: 15px;
+}
+
+@media  screen and (max-width=1000px) {
+
+    .star-box
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .start-box-inner
+    {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .feed-outer-container
+    {
+        width: 90%;
+        height: auto;
+    }
+    .feed-inner-container
+    {
+        width: 90%;
+    }
+
+
+    
 }
