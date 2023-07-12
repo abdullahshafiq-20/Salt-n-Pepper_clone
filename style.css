@@ -116,6 +116,14 @@ a {
     .nav-icon {
         padding-right: 0px;
     }
+    .navbar .nav-content > :not(.nav-user) {
+        display: none;
+    }
+    .nav-user {
+        top: 20px;
+        right:16px;
+        position: absolute;
+    }
 
     .nav-content a button {
         margin-top: 10px;
@@ -153,11 +161,9 @@ a {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .order-now-image a img {
-        width: 350px;
+        width: 330px;
         height: 200px;
-        object-fit: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: none;
     }
 
 
@@ -240,15 +246,11 @@ h3 {
     border-radius: 30px;
 }
 
-.scroll-short-menu a:hover {
-    background-color: rgba(40, 58, 64, 0.9);
-    color: white;
-    transition: all;
-}
+
 
 @media screen and (max-width: 640px) {
     .nav-short-menu {
-        height: 40vh;
+        height: 55vh;
     }
 
     .box-img {
@@ -402,7 +404,7 @@ h3 {
     }
 
     .nav-prom-img img {
-        width: 400px;
+        width: 370px;
         height: 100%;
 
     }
@@ -1068,6 +1070,10 @@ h3 {
         margin-left: 0px;
         margin-bottom: 20px;
     }
+    .footer-box-1 p
+    {    
+        text-align: center;
+    }
 
     .footer-remaining-box
     {
@@ -1625,6 +1631,56 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 800px) {
+    .soup-box
+    {
+        width:50%;
+        height: auto;
+        padding: 15px;
+    }
+    .soup-box img
+    {
+        width:100%;
+        height: auto !important;
+    }
+    .soup-info
+    {
+        width:100%;
+        height: auto;
+    }
+    .soup-info p
+    {
+        font-size: 12px;
+        padding: 0;
+    }
+    .bold
+    {
+        font-size: 15px;
+        padding: 0;
+    }
+    .soup-button
+    {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
+
+    .h-box {
+        height: auto;
+    }
+    
+    .h-box1 {
+        height: auto;
+    }
+    
+    .h-box2 {
+        height: auto;
+    }
+    
+    .h-bbq-box {
+        height: auto;
+    }
+    
+ }
 
 /* SOUP END  */
 
