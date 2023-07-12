@@ -27,7 +27,9 @@
 }
 
 /* end  */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* --------------------------------------------------------NAV-BAR START-------------------------------------------------------- */
 .navbar {
@@ -35,13 +37,14 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 19px;
+    margin-top: 0;
     margin-bottom: 19px;
     flex-wrap: wrap;
 
 }
 
 .nav-icon {
+    margin-top: 0;
     padding-right: 200px;
 }
 
@@ -91,7 +94,7 @@ a {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +114,7 @@ a {
     padding-left: 5px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 830px) {
 
     .nav-icon {
         padding-right: 0px;
@@ -156,14 +159,24 @@ a {
 .order-now-image a img {
     width: 100%;
 }
+.try2
+{
+    display: none;
+}
 
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .order-now-image a img {
-        width: 330px;
-        height: 200px;
+
+    .try1
+    {
         display: none;
+    }
+    .try2
+    {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
 
@@ -1422,6 +1435,58 @@ h3 {
     font-style: bold;
     font-weight: 400;
     color: white;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .nav-intro-inner
+    {
+        height: auto;
+    }
+    .nav-chronology
+    {
+        height: auto;
+    }
+    .nav-box1
+    {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #nav-chronology-1 {
+        flex-direction: column;
+    }
+
+    #nav-chronology-2 {
+        flex-direction: column-reverse;
+    }
+    .nav-box1 p
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .nav-box1 h5
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-box1 img 
+    {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 5px;
+    }
+    .nav-intro-inner-franchise-text h5 {
+        white-space: pre-line;
+    }
 }
 
 /* --------------------------------------------------------NAV-INTRODUCTION END-------------------------------------------------------- */
