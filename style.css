@@ -37,14 +37,13 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 19px;
     flex-wrap: wrap;
 
 }
 
 .nav-icon {
-    margin-top: 0;
     padding-right: 200px;
 }
 
@@ -119,12 +118,25 @@ a {
     .nav-icon {
         padding-right: 0px;
     }
-    .navbar .nav-content > :not(.nav-user) {
-        display: none;
+    .navbar .nav-content > :not(.nav-user, .nav-store) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
     }
+    .navbar .nav-content .res
+    {
+        display: none;
+    } 
     .nav-user {
-        top: 20px;
+        top: 40px;
         right:16px;
+        position: absolute;
+    }
+    .nav-store
+    {
+        top: 40px;
+        left: 10px;
         position: absolute;
     }
 
@@ -158,6 +170,7 @@ a {
 
 .order-now-image a img {
     width: 100%;
+    height: auto;
 }
 .try2
 {
