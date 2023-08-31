@@ -9,6 +9,39 @@
     font-family: 'Poppins', sans-serif;
 
 }
+:root {
+    --scrollbar-bg-light: transparent; /* Light gray background color */
+    --scrollbar-thumb-light: linear-gradient(43deg, #30cfd0 0%, #330867 100%) #1D68A6; /* Light blue thumb */
+    --scrollbar-bg-dark: transparent; /* Dark gray background color for night mode */
+  }
+  
+  /* Set the scrollbar width and background color using the custom properties */
+  ::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+    background-color: var(--scrollbar-bg-light); /* Default light gray background color */
+  }
+  
+  /* Set the color of the scrollbar thumb using the custom properties */
+  ::-webkit-scrollbar-thumb {
+    background: #ed1c24; /* Default light blue thumb */
+    border-radius: 6px; /* Adjust the radius to make it rounded */
+  }
+  
+  /* Handle on hover state */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ed1c24; /* Lighter blue color on hover */
+  }
+  
+  /* Optionally, you can style the scrollbar track when the thumb is being dragged */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #ed1c24; /* Even lighter blue when active */
+  }
+  
+  /* Apply dark mode styles */
+  .dark-mode {
+    --scrollbar-bg-light: transparent; /* Dark gray background color for night mode */
+    --scrollbar-thumb-light: #ed1c24; /* Light blue thumb for night mode */
+  }
  body{
     overflow-x: hidden; 
 }
@@ -287,7 +320,7 @@ h3 {
 }
 /* Style the horizontal scrollbar */
 .scroll-short-menu::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
     height: 5px; /* Set the width of the scrollbar */
 }
 
@@ -877,6 +910,27 @@ h3 {
     background-color: rgba(40, 58, 64, 0.9);
     color: white;
     transition: all;
+}
+/* Style the horizontal scrollbar */
+.scroll-feed::-webkit-scrollbar {
+    width: 2px;
+    height: 5px; /* Set the width of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+.scroll-feed::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1); ; /* Set the background color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.scroll-feed::-webkit-scrollbar-thumb {
+    background-color: #ED1C24; /* Set the color of the scrollbar handle */
+    border-radius: 6px; /* Add rounded corners to the handle */
+}
+
+/* Handle on hover */
+.scroll-feed::-webkit-scrollbar-thumb:hover {
+    background-color: #ed1b24; /* Change the color on hover */
 }
 
 @media screen and (max-width: 640px) {
